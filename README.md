@@ -2,7 +2,7 @@
 
 Este proyecto contiene un script en Bash que automatiza tareas comunes de mantenimiento en sistemas Linux, especialmente útil en entornos WSL o máquinas virtuales.
 
-## 🛠 Funcionalidades
+## Funcionalidades
 
 El script realiza las siguientes operaciones:
 
