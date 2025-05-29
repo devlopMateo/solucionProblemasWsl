@@ -1,0 +1,39 @@
+Instrucciones para ejecutar el script scriptAutomatizador.sh desde WSL
+=====================================================================
+
+1. Abre WSL (por ejemplo, Ubuntu) desde el menú de inicio de Windows.
+
+2. Navega hasta la carpeta donde descargaste el archivo scriptAutomatizador.sh.
+   Por ejemplo, si está en la carpeta Descargas de Windows:
+
+   cd /mnt/c/Users/TuUsuario/Downloads
+
+   (Reemplaza 'TuUsuario' por tu nombre de usuario real en Windows)
+
+3. Da permisos de ejecución al script:
+
+   chmod +x scriptAutomatizador.sh
+
+4. Ejecuta el script con:
+
+   ./scriptAutomatizador.sh
+
+5. El script generará un archivo de log con el nombre:
+
+   log_YYYY-MM-DD.txt
+
+   Puedes visualizarlo con:
+
+   cat log_2025-05-28.txt
+
+6. Si necesitas ejecutar el script frecuentemente, puedes moverlo a tu $HOME y agregar un alias en tu archivo ~/.bashrc.
+
+   Ejemplo:
+
+   mv scriptAutomatizador.sh ~/
+   echo "alias automatizar='~/scriptAutomatizador.sh'" >> ~/.bashrc
+   source ~/.bashrc
+
+   Luego solo deberás ejecutar:
+
+   automatizar
